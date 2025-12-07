@@ -30,7 +30,7 @@ scrape_configs:
         # === NON-PROD / STAGE ENV URLs ===
         - https://stagedbchatapp.engageos.ai/
         - https://stagedb.engageos.ai/
-        - https://0faa992fe0ecdfb6b9eeeafdfe6f788cdf8549de-3000.dstack-pha-prod7.phala.network
+        - https://6700717036c0fdcaa5649069c3654ab6983175ec-3000.dstack-pha-prod7.phala.network
         - http://172.236.164.19:8081/
     relabel_configs:
       - source_labels: [__address__]
