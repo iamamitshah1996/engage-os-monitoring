@@ -39,3 +39,10 @@ scrape_configs:
         target_label: instance
       - target_label: __address__
         replacement: blackbox_exporter:9115
+
+  - job_name: "cadvisor"
+    static_configs:
+      - targets:
+        - "172.236.187.68:8080"     # PROD VM
+        - "172.236.164.19:8080"     # STAGE VM
+        - "172.236.189.82:8080"     # PROD VM 2 (if needed)
