@@ -14,7 +14,7 @@ scrape_configs:
     static_configs:
       - targets: ["172.236.189.82:9100"]
 
-  - job_name: "AIML-Dashboard-chatapp-Stage"
+  - job_name: "Backend-Prod"
     static_configs:
       - targets: ["172.236.188.47:9100"]
 
