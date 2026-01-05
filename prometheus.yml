@@ -14,6 +14,10 @@ scrape_configs:
     static_configs:
       - targets: ["172.236.189.82:9100"]
 
+  - job_name: "AIML-Dashboard-chatapp-Stage"
+    static_configs:
+      - targets: ["172.236.188.47:9100"]
+
   - job_name: "blackbox_http"
     metrics_path: /probe
     params:
@@ -46,6 +50,7 @@ scrape_configs:
         - "172.236.187.68:8080"     # PROD VM
         - "172.236.164.19:8080"     # STAGE VM
         - "172.236.189.82:8080"     # PROD VM 2 (if needed)
+        - "172.236.188.47:8080"     #Backend Prod
 
   - job_name: "logporter"
     static_configs:
@@ -53,3 +58,4 @@ scrape_configs:
         - "172.236.187.68:9333"
         - "172.236.164.19:9333"
         - "172.236.189.82:9333"
+        - "172.236.188.47:9333"
