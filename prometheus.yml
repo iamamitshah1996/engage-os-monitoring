@@ -12,7 +12,7 @@ scrape_configs:
     static_configs:
       - targets: ["172.236.164.19:9100"]
         labels:
-          vm_name: ""AIML-Dashboard-chatapp-Stage.engageos.ai"
+          vm_name: "AIML-Dashboard-chatapp-Stage.engageos.ai"
 
   - job_name: "Website-Dashboard-chatapp-Prod"
     static_configs:
