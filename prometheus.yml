@@ -5,18 +5,26 @@ scrape_configs:
   - job_name: "AIML-PROD"
     static_configs:
       - targets: ["172.236.187.68:9100"]
+        labels:
+          vm_name: "AIML-Prod-&-Backend-Stage.engageos.ai"
 
   - job_name: "AIML-Dashboard-chatapp-Stage"
     static_configs:
       - targets: ["172.236.164.19:9100"]
+        labels:
+          vm_name: ""AIML-Dashboard-chatapp-Stage.engageos.ai"
 
   - job_name: "Website-Dashboard-chatapp-Prod"
     static_configs:
       - targets: ["172.236.189.82:9100"]
+        labels:
+          vm_name: "Website-Dashboard-chatapp-Prod.engageos.ai"
 
   - job_name: "Backend-Prod"
     static_configs:
       - targets: ["172.236.188.47:9100"]
+        labels:
+          vm_name: "Backend-Prod.engageos.ai"
 
   - job_name: "blackbox_http"
     metrics_path: /probe
